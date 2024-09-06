@@ -1,30 +1,6 @@
 #!/usr/bin/env ruby
 
-=begin
 
-    Copyright (C) 2012, 2013, 2014
-
-    Minzsec
-    www.facebook.com/rootnameshadow
-
-    PenTBox (Penetration Testing Box)
-
-    This file is part of PenTBox.
-
-    PenTBox is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    PenTBox is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with PenTBox.  If not, see <http://www.gnu.org/licenses/>.
-
-=end
 
 ###########################
 ##  BASIC CONFIGURATION  ##
@@ -127,14 +103,7 @@ while option1 != "5"
 	puts ""
 	puts "3- Web"
         puts ""
-        puts "4- Ip grabber"
-        puts ""
-        puts "5- Geolocation ip"
-        puts ""
-        puts "6- Mass attack"
-	puts ""
-	puts "7- License and contact"
-	puts ""
+        
 	puts "8- Exit"
 	puts ""
 	print "   -> "
@@ -242,39 +211,7 @@ while option1 != "5"
 					puts "Invalid option."
 					puts ""
 			end
-		when "4"
-module_exec = false
-puts "
-    X------------------------------------X
-    | Copyright (C) 2012, 2013, 2014     |
-    |                                    |
-    |   Minzsec                          |
-    |   www.facebook.com/rootnameshadow  |
-    X------------------------------------X
-
-    PenTBox is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    PenTBox is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with PenTBox. Or you need some confuguration If not, see <http://www.gnu.org/licenses/>.
-
-"
-		when "5"
-			module_exec = false
-			Process.kill("SIGINT", Process.pid()) # Just exit.
-		else
-			module_exec = false
-			puts ""
-			puts "Invalid option."
-			puts ""
-	end
+		
 	if module_exec == true
 		puts ""
 		puts "[*] Module execution finished."
